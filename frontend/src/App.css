@@ -1,0 +1,132 @@
+.App {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.page-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+.card-container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.stat-card .stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stat-card .stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.code-block {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 12px 0;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  overflow-x: auto;
+}
+
+.tree-view {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.tree-item {
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.tree-item:hover {
+  background: #f0f2f5;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.status-analyzing {
+  background: #fff7e6;
+  color: #fa8c16;
+}
+
+.status-completed {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.status-failed {
+  background: #fff1f0;
+  color: #ff4d4f;
+}
+
+.agent-card {
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+.agent-card.processing {
+  border-color: #1890ff;
+  box-shadow: 0 0 10px rgba(24, 144, 255, 0.2);
+}
+
+.agent-card.completed {
+  border-color: #52c41a;
+}
+
+.recommendation-card {
+  border-left: 4px solid #1890ff;
+  background: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.code-diff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.code-diff .original {
+  border-left: 4px solid #ff4d4f;
+}
+
+.code-diff .recommended {
+  border-left: 4px solid #52c41a;
+}
